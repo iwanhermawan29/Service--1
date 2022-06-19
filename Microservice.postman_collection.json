@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "6c56b35b-36b1-4bf2-af68-86890cebc8c2",
+		"name": "Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21537284"
+	},
+	"item": [
+		{
+			"name": "Show All",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iwan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/RestAPI/api/article?article-key=rahasia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RestAPI",
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "article-key",
+							"value": "rahasia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iwan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/RestAPI/api/article?article-key=rahasia&Id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RestAPI",
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "article-key",
+							"value": "rahasia"
+						},
+						{
+							"key": "Id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iwan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article-key",
+							"value": "rahasia",
+							"type": "text"
+						},
+						{
+							"key": "Id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/RestAPI/api/article?Id=11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RestAPI",
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "article-key",
+							"value": "art123",
+							"disabled": true
+						},
+						{
+							"key": "Id",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iwan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article-key",
+							"value": "rahasia",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "Content",
+							"value": "aaaaa",
+							"type": "text"
+						},
+						{
+							"key": "Category",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "Id",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/RestAPI/api/article?article-key=rahasia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RestAPI",
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "article-key",
+							"value": "rahasia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "iwan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "aaaaaa",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "a",
+							"type": "text"
+						},
+						{
+							"key": "article-key",
+							"value": "rahasia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/RestAPI/api/article?Title=rahasia&Content=a&Category=1&article-key=rahasia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RestAPI",
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "rahasia"
+						},
+						{
+							"key": "Content",
+							"value": "a"
+						},
+						{
+							"key": "Category",
+							"value": "1"
+						},
+						{
+							"key": "article-key",
+							"value": "rahasia"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
